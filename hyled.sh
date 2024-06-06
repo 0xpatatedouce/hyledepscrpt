@@ -48,3 +48,7 @@ cargo binstall cargo-risczero
 
 # Clone le dépôt Git de Hyle
 git clone https://github.com/Hyle-org/hyle.git
+
+# Change de répertoire vers le dépôt cloné et exécute make build ou make install
+cd hyle
+make build # ou make install
