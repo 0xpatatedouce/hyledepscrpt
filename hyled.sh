@@ -34,8 +34,8 @@ source $HOME/.bash_profile
 # Vérifie la version de Go installée
 go version
 
-# Installe Rust via rustup
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# Installe Rust via rustup et choisit l'option 1 automatiquement
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable --profile default
 
 # Charge l'environnement Rust
 source $HOME/.cargo/env
